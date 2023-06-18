@@ -3,6 +3,7 @@
 	import Header from './Header.svelte';
 	import './styles.css';
 	import 'dracula-ui/styles/dracula-ui.css'
+	import Tthree from './Tthree.svelte';
 
 	let teraz = new Date(), month, day, year;
 	year = teraz.getFullYear();
@@ -15,7 +16,7 @@
 	<main>
 		<slot />
 	</main>
-
+	
 	<footer>
 		<p class="drac-text drac-text-grey-secondary">{year} vytvoril Michal Hicz</p>
 	</footer>
@@ -50,6 +51,8 @@
 	footer a {
 		font-weight: bold;
 	}
+
+	a { text-decoration: none; }
 
 	@media (min-width: 480px) {
 		footer {

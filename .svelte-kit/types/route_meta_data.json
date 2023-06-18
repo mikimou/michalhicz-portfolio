@@ -1,5 +1,8 @@
 {
 	"/": [
 		"src/routes/+page.js"
+	],
+	"/three": [
+		"src/routes/three/+page.js"
 	]
 }

@@ -6,7 +6,8 @@ import github from '$lib/images/github.svg';
 <header>
 	
 	<div class="corner">
-		
+		<a href="https://portal.michalhicz.eu/" style="margin-top: 1em; margin-left:1em; width:6em; height:2.5em;" class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm drac-btn-xs">
+			PORTAL</a>
 	</div>
 
 	<!-- <nav>
@@ -127,4 +128,6 @@ import github from '$lib/images/github.svg';
 	a:hover {
 		color: var(--color-text);
 	}
+
+	a { text-decoration: none; }
 </style>
