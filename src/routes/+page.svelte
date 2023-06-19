@@ -52,7 +52,7 @@
 	<div style="height: 2em;"></div>
 	</div>
 		<div class="btns">
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">My story</a>
+			<a href="/three" class="drac-btn drac-bg-purple-cyan drac-m-sm btn">My story</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Projects</a>
 			<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Portal</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn"></a>
