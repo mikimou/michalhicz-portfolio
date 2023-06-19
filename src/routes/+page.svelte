@@ -35,7 +35,17 @@
 			
 		<div class="drac-box drac-rounded-lg drac-p-md info">
     		<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-purple-cyan">:~$ ./skills.sh</h2>
+			<br>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Breaking stuff... Advanced</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
 
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
+			
+			
 		</div>
 		</div>
 	</div>
@@ -44,7 +54,7 @@
 		<div class="btns">
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">My story</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Projects</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Portal</a>
+			<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Portal</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn"></a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Contact</a>
 	</div>
@@ -96,8 +106,6 @@
 		border-color: #92ACF9;
 		box-shadow: inset 0 0 25px 3px #16171d;
 		box-shadow: 0 0 30px 1px #16171d;
-		flex-flow: column;
-		display: flex;
 		background-color: #16171d;
 	}
 	.desc {
@@ -137,7 +145,7 @@
 		border-style: solid;
 		border-width: 0px;
 		box-shadow: inset 0 0 15px 1px #0F0F16, 0 0 0px 0px #0a0a0e;
-		transition: 300ms ease-in-out;
+		transition: 250ms ease-in-out;
 	}
 	.window:hover {
 		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 25px 5px #0a0a0e;
@@ -182,5 +190,10 @@
 		text-decoration: none!important;;
 		color: #21222C!important;
 		font-weight: 500;
+		box-shadow: 0 0 10px 1px black;
+		transition: 250ms ease-in-out;
+	}
+	a:hover {
+		box-shadow: 0 0 0px 0px black;
 	}
 </style>
