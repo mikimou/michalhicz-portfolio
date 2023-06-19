@@ -1,6 +1,6 @@
 <script>
 	import Tthree from './Tthree.svelte';
-
+	
 </script>
 
 <svelte:head>
@@ -35,6 +35,7 @@
 			
 		<div class="drac-box drac-rounded-lg drac-p-md info">
     		<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-purple-cyan">:~$ ./skills.sh</h2>
+
 		</div>
 		</div>
 	</div>
@@ -72,10 +73,14 @@
 		justify-content: space-between!important;
 		padding: 1em;
 		background-color: #1D1E26!important;
-		border-radius:10px;
+		border-radius:15px;
 		border-style: solid;
 		border-width: 0px;
-		box-shadow: 0 0 30px 1px black;
+		box-shadow: inset 0 0 15px 1px #0F0F16, 0 0 0px 0px #0a0a0e;
+		transition: 250ms ease-in-out;
+	}
+	.btns:hover {
+		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 25px 5px #0a0a0e;
 	}
 	.two {
 		
@@ -128,11 +133,14 @@
 		background-color: #1D1E26!important;
 		padding: 2em;
 		justify-content: center!important;
-		border-radius: 15px;
+		border-radius: 20px;
 		border-style: solid;
 		border-width: 0px;
-		box-shadow: 0 0 30px 1px black;
-
+		box-shadow: inset 0 0 15px 1px #0F0F16, 0 0 0px 0px #0a0a0e;
+		transition: 300ms ease-in-out;
+	}
+	.window:hover {
+		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 25px 5px #0a0a0e;
 	}
 	.buttons {
 		height: 8em;

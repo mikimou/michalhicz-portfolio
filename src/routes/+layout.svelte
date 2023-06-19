@@ -5,7 +5,7 @@
 	import 'dracula-ui/styles/dracula-ui.css'
 	import Tthree from './Tthree.svelte';
   	import Scene from './scene.svelte';
-	import { mousex, mousey } from './mouse'
+	import { mousex, mousey, graphicsToggle } from './stores'
 
 	let teraz = new Date(), month, day, year;
 	year = teraz.getFullYear();
@@ -16,11 +16,16 @@
 		mousey.set(event.clientY);
 	}
 
+	let graphics = true;
+	graphicsToggle.subscribe((value) => graphics = value);
 
 </script>
 
+{#if graphics}
 <Tthree />
-<div class="app" on:mousemove={handleMousemove}>
+{/if}
+
+<div style={graphics == false ? 'background-color: #111217!important;' : 'background-color: transparent!important;'} class="app" on:mousemove={handleMousemove}>
 	<Header />
 
 	<main>

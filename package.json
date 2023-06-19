@@ -44,6 +44,7 @@
 		"svelte-simple-modal": "^1.5.2",
 		"three-asciieffect": "^1.0.1",
 		"three-stdlib": "^2.23.10",
-		"threlte": "^3.13.1"
+		"threlte": "^3.13.1",
+		"typewriter-effect": "^2.20.1"
 	}
 }

@@ -1,13 +1,30 @@
 <script>
-import github from '$lib/images/github.svg';
+	import github from '$lib/images/github.svg';
+	import { graphicsToggle } from './stores'
+
+	async function graphicsOff() {
+		graphicsToggle.set(false);
+	}
+	async function graphicsOn() {
+		graphicsToggle.set(true);
+	}
+
+	let graphics = true;
+
+	graphicsToggle.subscribe((value) => graphics = value);
 
 </script>
 
 <header>
 	
 	<div class="corner">
-		<a href="https://portal.michalhicz.eu/" style="margin-top: 1em; margin-left:1em; width:6em; height:2.5em;" class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm drac-btn-xs">
-			PORTAL</a>
+		{#if graphics}
+		<button on:click={graphicsOff} style="margin-top: 1em; margin-left:1em; width:10em; height:2.5em;" class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm drac-btn-xs">
+			GRAPHICS: on  </button>
+		{:else}
+		<button on:click={graphicsOn} style="margin-top: 1em; margin-left:1em; width:10em; height:2.5em;" class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm drac-btn-xs">
+			GRAPHICS: off</button>
+		{/if}
 	</div>
 
 	<!-- <nav>
