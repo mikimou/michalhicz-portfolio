@@ -2,6 +2,7 @@
 	import * as Threlte from '@threlte/core'
 	import * as Three from 'three'
 	import * as Utils from 'three/src/math/MathUtils'
+	
   </script>
   
   <div class="scene">
@@ -51,8 +52,9 @@
 	.scene {
 	  width: 100%;
 	  height: 100%;
-	  position: relative;
-	  z-index: 0;
+	  position: absolute;
+	  z-index: -1;
+	  background-color: #111217!important;
 	}
   </style>
   

@@ -35,7 +35,7 @@
     		<p class="drac-text drac-line-height drac-text-purple-cyan">jakooo</p>
 		</div>
 	</div>
-	<div style="height:0.5em"></div>
+	<div style="height: 2em;"></div>
 	</div>
 		<div class="btns">
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Moj pribeh</a>
@@ -67,8 +67,12 @@
 		overflow:visible;
 		display: flex;
 		justify-content: space-between!important;
-		width: 62.95em;;
-		margin-left:-1em;
+		padding: 1em;
+		background-color: #1D1E26!important;
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 0px;
+		box-shadow: 0 0 30px 1px black;
 	}
 	.two {
 		
@@ -113,6 +117,13 @@
 	.window {
 		overflow:visible;
 		display: flex;
+		background-color: #1D1E26!important;
+		padding: 2em;
+		justify-content: center!important;
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 0px;
+		box-shadow: 0 0 30px 1px black;
 
 	}
 	.buttons {
