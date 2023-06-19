@@ -1,5 +1,12 @@
 <script>
 	import Tthree from './Tthree.svelte';
+	import { goto } from '$app/navigation'
+
+	function keypresss(event) {
+		if (event.key == 'y') {
+			goto('/three');
+		}
+	}
 	
 </script>
 
@@ -7,6 +14,8 @@
 	<title>Michal Hicz</title>
 	<meta name="description" content="Michal Hicz Portfolio" />
 </svelte:head>
+
+<svelte:window on:keydown|preventDefault={keypresss}/>
 
 <section>
 	
@@ -22,7 +31,6 @@
 			<div class="drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md profile">
 				<center>
 					<div class="head">
-					
 					<h2 style="font-weight: 500;" class="drac-heading drac-heading-2xl drac-text-black">Michal Hicz</h2>
 					</div>
 				</center>
@@ -41,9 +49,9 @@
 			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
 			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
 			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
 
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Show More? [<a href="/three">YES</a>/No] █</p>
 			
 			
 		</div>
@@ -52,11 +60,11 @@
 	<div style="height: 2em;"></div>
 	</div>
 		<div class="btns">
-			<a href="/three" class="drac-btn drac-bg-purple-cyan drac-m-sm btn">My story</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Projects</a>
-			<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Portal</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn"></a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Contact</a>
+			<a href="/three" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</a>
+			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</a>
+			<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</a>
+			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa"></a>
+			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</a>
 	</div>
 	</div>
 	
@@ -189,11 +197,14 @@
 	a { 
 		text-decoration: none!important;;
 		color: #21222C!important;
+		
+	}
+	.aa:hover {
+		box-shadow: 0 0 0px 0px black;
+	}
+	.aa {
 		font-weight: 500;
 		box-shadow: 0 0 10px 1px black;
 		transition: 250ms ease-in-out;
-	}
-	a:hover {
-		box-shadow: 0 0 0px 0px black;
 	}
 </style>
