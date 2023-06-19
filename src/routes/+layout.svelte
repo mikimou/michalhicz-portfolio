@@ -33,7 +33,7 @@
 	</main>
 	
 	<footer>
-		<p class="drac-text drac-text-grey-secondary">{year} vytvoril Michal Hicz</p>
+		<p class="drac-text drac-text-grey-secondary">{year} developed by Michal Hicz</p>
 	</footer>
 </div>
 
