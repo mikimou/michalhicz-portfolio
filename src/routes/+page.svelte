@@ -15,11 +15,17 @@
 			<img src={logo} alt="" />
 		</picture>
 	</div>-->
+	<div class="bounce">
 	<div class="group">
 	<div class="window">
 		<div class="two">
 			<div class="drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md profile">
-				<p class="drac-text drac-line-height drac-text-black drac-text-lg">jakooo</p>
+				<center>
+					<div class="head">
+					
+					<h2 style="font-weight: 500;" class="drac-heading drac-heading-2xl drac-text-black">Michal Hicz</h2>
+					</div>
+				</center>
 			</div>
 			<div class="drac-box drac-bg-black drac-rounded-lg drac-p-md desc">
 				<p class="drac-text drac-line-height drac-text-purple-cyan">jakooo</p>
@@ -37,19 +43,32 @@
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Purple Cyan</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Purple Cyan</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Kontakt</a>
-		</div>
-	
+	</div>
+	</div>
 	
 
 
 </section>
 
 <style>
+	.head {
+		
+	}
+	.bounce {
+        animation-name: bounce;
+        animation-timing-function: ease;
+    }
+    @keyframes bounce {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
 	.btns {
 		overflow:visible;
 		display: flex;
 		justify-content: space-between!important;
-		width: 62.9em;;
+		width: 62.95em;;
+		margin-left:-1em;
 	}
 	.two {
 		
@@ -60,8 +79,10 @@
 		margin: 0em;
 		border-radius: 10px;
 		border-style: solid;
-		border-width: 2px;
+		border-width: 3px;
 		border-color: #92ACF9;
+		box-shadow: inset 0 0 25px 3px #16171d;
+		box-shadow: 0 0 30px 1px #16171d;
 	}
 	.desc {
 		width: 25em;
@@ -72,8 +93,10 @@
 		margin-right: 1em;
 		border-radius: 10px;
 		border-style: solid;
-		border-width: 2px;
+		border-width: 3px;
 		border-color: #92ACF9;
+		box-shadow: inset 0 0 25px 3px #16171d;
+		box-shadow: 0 0 30px 1px #16171d;
 	}
 	.profile {
 		width: 25em;
@@ -85,7 +108,7 @@
 		border-radius: 10px;
 		border-style: solid;
 		border-width: 0px;
-		
+		box-shadow: 0 0 30px 1px black;
 	}
 	.window {
 		overflow:visible;
