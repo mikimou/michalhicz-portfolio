@@ -2,15 +2,7 @@
 	import * as Threlte from '@threlte/core'
 	import * as Three from 'three'
 	import * as Utils from 'three/src/math/MathUtils'
-	import Scr from './scr.svelte';
-	import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass';
-	import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect'
-	import { Pass, useThrelte, } from '@threlte/core';
-	import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass';
-	import { RenderPixelatedPass } from 'three/examples/jsm/postprocessing/RenderPixelatedPass';
-
-const { renderer, scene, camera } = useThrelte();
-
+	import Processing from './Processing.svelte';
 
 	const parameters = {
   		count: 100000,
@@ -66,8 +58,7 @@ const { renderer, scene, camera } = useThrelte();
 		rotation={{ x: Utils.DEG2RAD * 90 }}
 		receiveShadow
 	  />
-	<Pass pass={new FilmPass(0.19, 0.2, 400, true)} />
-	<Pass pass={new RenderPixelatedPass(20, scene, $camera)} />
+	  <Processing />
 
 	</Threlte.Canvas>
   </div>
