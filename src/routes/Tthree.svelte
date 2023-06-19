@@ -3,6 +3,7 @@
 	import * as Three from 'three'
 	import * as Utils from 'three/src/math/MathUtils'
 	import Processing from './Processing.svelte';
+	import { mousex, mousey } from './mouse';
 
 	const parameters = {
   		count: 100000,
@@ -14,35 +15,38 @@
   		randomnessPower: 3,
   		insideColor: "#ff6030",
   		outsideColor: "#1b3984"
-};
+	};
 
+	let mx = 0;
+	let my = 0;
+
+	mousex.subscribe((value) => mx = value);
+	mousey.subscribe((value) => my = value);
   </script>
   
   <div class="scene">
 	<Threlte.Canvas>
 	  <!-- Camera -->
-	  <Threlte.PerspectiveCamera position={{ x: 20, y: 20, z: 20 }} fov={50}>
+	  <Threlte.PerspectiveCamera position={{ x: 40+(my*0.01), y: 40-(mx*0.01), z: 30 }} fov={8}>
 		<!-- Controls -->
-		<Threlte.OrbitControls autoRotate />
+		<Threlte.OrbitControls enableDamping autoRotate />
 	  </Threlte.PerspectiveCamera>
   
 	  <!-- Lights the scene equally -->
-	  <Threlte.AmbientLight color="white" intensity={0.2} />
+	  <Threlte.AmbientLight color="white" intensity={1} />
   
 	  <!-- Light that casts a shadow -->
 	  <Threlte.DirectionalLight
 		color="white"
-		intensity={2}
-		position={{ x: 10, y: 10 }}
-		shadow={{
-		  camera: { top: 8 },
-		}}
+		intensity={3}
+		position={{ x: 40, y: 40 }}
+		
 	  />
   
 	  <!-- Sphere -->
 	  <Threlte.Mesh
 		geometry={new Three.SphereGeometry(4, 64, 64)}
-		material={new Three.MeshStandardMaterial({ color: 'white' })}
+		material={new Three.MeshStandardMaterial({ color: '#1D1E26' })}
 		position={{ y: 4 }}
 		receiveShadow
 		castShadow
@@ -52,14 +56,14 @@
 	  <Threlte.Mesh
 		geometry={new Three.PlaneGeometry(20, 20)}
 		material={new Three.MeshStandardMaterial({
-		  color: 'white',
+		  color: '#1D1E26',
 		  side: Three.DoubleSide,
 		})}
 		rotation={{ x: Utils.DEG2RAD * 90 }}
 		receiveShadow
 	  />
-	  <Processing />
-
+	  
+	<Processing/>
 	</Threlte.Canvas>
   </div>
   

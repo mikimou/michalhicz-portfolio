@@ -5,14 +5,22 @@
 	import 'dracula-ui/styles/dracula-ui.css'
 	import Tthree from './Tthree.svelte';
   	import Scene from './scene.svelte';
+	import { mousex, mousey } from './mouse'
 
 	let teraz = new Date(), month, day, year;
 	year = teraz.getFullYear();
 
+
+	function handleMousemove(event) {
+		mousex.set(event.clientX);
+		mousey.set(event.clientY);
+	}
+
+
 </script>
 
 <Tthree />
-<div class="app">
+<div class="app" on:mousemove={handleMousemove}>
 	<Header />
 
 	<main>

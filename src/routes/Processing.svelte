@@ -3,6 +3,9 @@
     import { AsciiEffect } from 'three/examples/jsm/effects/AsciiEffect'
     import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass';
 	import { RenderPixelatedPass } from 'three/examples/jsm/postprocessing/RenderPixelatedPass';
+    import { DotScreenPass } from 'three/examples/jsm/postprocessing/DotScreenPass';
+    import { Vector2 } from 'three';
+
 
 	const { size, renderer, scene, camera, invalidate, advance} = Threlte.useThrelte();
 
@@ -17,8 +20,9 @@
 
 </script>
 
-<!--<Threlte.Pass pass={new RenderPixelatedPass(20, scene, $camera)} />-->
-<!--<Threlte.Pass pass={new FilmPass(0.19, 0.2, 400, 1)} />-->
+<Threlte.Pass pass={new RenderPixelatedPass(100, scene, $camera)} />
+
+
 <!--<Threlte.Pass pass={effect}/>-->
 
 <style>

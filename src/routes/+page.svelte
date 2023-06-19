@@ -75,7 +75,7 @@
 		border-radius:10px;
 		border-style: solid;
 		border-width: 0px;
-		box-shadow: 0 0 30px 1px black;
+		box-shadow: 0 0 30px 5px black;
 	}
 	.two {
 		
@@ -131,7 +131,7 @@
 		border-radius: 15px;
 		border-style: solid;
 		border-width: 0px;
-		box-shadow: 0 0 30px 1px black;
+		box-shadow: 0 0 30px 5px black;
 
 	}
 	.buttons {
