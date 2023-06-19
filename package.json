@@ -40,8 +40,10 @@
 		"install": "^0.13.0",
 		"npm": "^9.6.1",
 		"pocketbase": "^0.12.1",
+		"postprocessing": "^6.32.1",
 		"svelte-simple-modal": "^1.5.2",
 		"three-asciieffect": "^1.0.1",
-		"three-stdlib": "^2.23.10"
+		"three-stdlib": "^2.23.10",
+		"threlte": "^3.13.1"
 	}
 }

@@ -4,6 +4,7 @@
 	import './styles.css';
 	import 'dracula-ui/styles/dracula-ui.css'
 	import Tthree from './Tthree.svelte';
+  	import Scene from './scene.svelte';
 
 	let teraz = new Date(), month, day, year;
 	year = teraz.getFullYear();

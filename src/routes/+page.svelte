@@ -27,14 +27,14 @@
 					</div>
 				</center>
 			</div>
-			<div class="drac-box drac-bg-black drac-rounded-lg drac-p-md desc">
-				<p class="drac-text drac-line-height drac-text-purple-cyan">jakooo</p>
+			<div class="drac-box drac-rounded-lg drac-p-md desc">
+				<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-lg">jakooo</p>
 			</div>
 		</div>
 		<div class="two">
 			
-		<div class="drac-box drac-bg-black drac-rounded-lg drac-p-md info">
-    		<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-grey-secondary">:~$ ./skills.sh</h2>
+		<div class="drac-box drac-rounded-lg drac-p-md info">
+    		<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-purple-cyan">:~$ ./skills.sh</h2>
 		</div>
 		</div>
 	</div>
@@ -43,8 +43,8 @@
 		<div class="btns">
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">My story</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Projects</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Purple Cyan</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Purple Cyan</a>
+			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Portal</a>
+			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn"></a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Contact</a>
 	</div>
 	</div>
@@ -93,6 +93,7 @@
 		box-shadow: 0 0 30px 1px #16171d;
 		flex-flow: column;
 		display: flex;
+		background-color: #16171d;
 	}
 	.desc {
 		width: 25em;
@@ -103,10 +104,11 @@
 		margin-right: 2em;
 		border-radius: 10px;
 		border-style: solid;
-		border-width: 3px;
+		border-width: 0px;
 		border-color: #92ACF9;
 		box-shadow: inset 0 0 25px 3px #16171d;
 		box-shadow: 0 0 30px 1px #16171d;
+		background-color: #16171d;
 	}
 	.profile {
 		width: 25em;
@@ -171,5 +173,6 @@
 	a { 
 		text-decoration: none!important;;
 		color: #21222C!important;
+		font-weight: 500;
 	}
 </style>
