@@ -27,7 +27,7 @@
   <div class="scene">
 	<Threlte.Canvas>
 	  <!-- Camera -->
-	  <Threlte.PerspectiveCamera position={{ x: 40+(my*0.01), y: 40-(mx*0.01), z: 30 }} fov={8}>
+	  <Threlte.PerspectiveCamera position={{ x: 40+(my*0.01), y: 40-(mx*0.01), z: 30 }} fov={9}>
 		<!-- Controls -->
 		<Threlte.OrbitControls enableDamping autoRotate />
 	  </Threlte.PerspectiveCamera>
@@ -41,15 +41,6 @@
 		intensity={3}
 		position={{ x: 40, y: 40 }}
 		
-	  />
-  
-	  <!-- Sphere -->
-	  <Threlte.Mesh
-		geometry={new Three.SphereGeometry(4, 64, 64)}
-		material={new Three.MeshStandardMaterial({ color: '#1D1E26' })}
-		position={{ y: 4 }}
-		receiveShadow
-		castShadow
 	  />
   
 	  <!-- Floor -->
