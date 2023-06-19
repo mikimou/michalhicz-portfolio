@@ -31,18 +31,21 @@
 				<p class="drac-text drac-line-height drac-text-purple-cyan">jakooo</p>
 			</div>
 		</div>
+		<div class="two">
+			
 		<div class="drac-box drac-bg-black drac-rounded-lg drac-p-md info">
-    		<p class="drac-text drac-line-height drac-text-purple-cyan">jakooo</p>
+    		<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-grey-secondary">:~$ ./skills.sh</h2>
+		</div>
 		</div>
 	</div>
 	<div style="height: 2em;"></div>
 	</div>
 		<div class="btns">
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Moj pribeh</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Projekty</a>
+			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">My story</a>
+			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Projects</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Purple Cyan</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Purple Cyan</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Kontakt</a>
+			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn">Contact</a>
 	</div>
 	</div>
 	
@@ -69,7 +72,7 @@
 		justify-content: space-between!important;
 		padding: 1em;
 		background-color: #1D1E26!important;
-		border-radius: 10px;
+		border-radius:10px;
 		border-style: solid;
 		border-width: 0px;
 		box-shadow: 0 0 30px 1px black;
@@ -78,23 +81,26 @@
 		
 	}
 	.info {
-		height: 24em;
+		
 		width: 35em;
 		margin: 0em;
+		height: 100%;
 		border-radius: 10px;
 		border-style: solid;
 		border-width: 3px;
 		border-color: #92ACF9;
 		box-shadow: inset 0 0 25px 3px #16171d;
 		box-shadow: 0 0 30px 1px #16171d;
+		flex-flow: column;
+		display: flex;
 	}
 	.desc {
 		width: 25em;
 		height: 8em;
-		margin-top: 1em;
+		margin-top: 2em;
 		margin-bottom: 0em;
 		margin-left: 0em;
-		margin-right: 1em;
+		margin-right: 2em;
 		border-radius: 10px;
 		border-style: solid;
 		border-width: 3px;
@@ -104,12 +110,12 @@
 	}
 	.profile {
 		width: 25em;
-		height: 15em;
+		height: 14em;
 		margin-top: 0em;
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 		margin-left: 0em;
-		margin-right: 1em;
-		border-radius: 10px;
+		margin-right: 2em;
+		border-radius: 20px;
 		border-style: solid;
 		border-width: 0px;
 		box-shadow: 0 0 30px 1px black;
@@ -120,7 +126,7 @@
 		background-color: #1D1E26!important;
 		padding: 2em;
 		justify-content: center!important;
-		border-radius: 10px;
+		border-radius: 15px;
 		border-style: solid;
 		border-width: 0px;
 		box-shadow: 0 0 30px 1px black;
