@@ -66,7 +66,7 @@
 			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Breaking stuff... Advanced</p>
 			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
 
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Show More? [<a href="/three">YES</a>/No] (Click <a href="/three">YES</a> or type 'y')</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Show More? [<a href="/three">YES</a>/No] (Click on <a href="/three">YES</a> or type 'y')</p>
 			
 			
 		</div>
