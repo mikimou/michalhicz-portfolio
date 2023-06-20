@@ -77,7 +77,7 @@
 			<button on:click={() => nav('/three')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</button>
 			<button class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</button>
 			<button on:click={() => nav('portal')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</button>
-			<button class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Settings</button>
+			<button class="drac-btn drac-bg-purple drac-btn-outline drac-m-sm btn" disabled={true}>Settings</button>
 			<button class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</button>
 	</div>
 	</div>

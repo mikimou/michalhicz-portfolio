@@ -6,6 +6,9 @@
 	import Tthree from './Tthree.svelte';
   	import Scene from './scene.svelte';
 	import { mousex, mousey, graphicsToggle, screenWidth } from './stores'
+  	import { fly, fade  } from 'svelte/transition';
+
+	export let data;
 
 	let teraz = new Date(), month, day, year;
 	year = teraz.getFullYear();
@@ -23,10 +26,11 @@
 <Tthree />
 {/if}
 
+{#key data.url}
 <div style={$graphicsToggle == false ? 'background-color: #111217!important;' : 'background-color: transparent!important;'} class="app" on:mousemove={handleMousemove}>
 	<Header />
 
-	<main>
+	<main in:fade={{delay: 250, duration: 250,}} out:fade={{delay: 0, duration: 200,}}>
 		<slot />
 	</main>
 	
@@ -34,6 +38,7 @@
 		<p class="drac-text drac-text-grey-secondary">{year} developed by Michal Hicz</p>
 	</footer>
 </div>
+{/key}
 
 <style>
 	.app {

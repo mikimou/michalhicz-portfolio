@@ -1,8 +1,11 @@
 {
 	"/": [
-		"src/routes/+page.js"
+		"src/routes/+page.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
 	],
 	"/three": [
-		"src/routes/three/+page.js"
+		"src/routes/three/+page.js",
+		"src/routes/+layout.js"
 	]
 }
