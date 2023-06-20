@@ -74,7 +74,6 @@
 	<div style="height: 2em;"></div>
 	</div>
 		<div class="btns">
-			<button on:click={() => nav('/')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Home</button>
 			<button on:click={() => nav('/three')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</button>
 			<button class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</button>
 			<button on:click={() => nav('portal')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</button>

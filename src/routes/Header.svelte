@@ -9,16 +9,12 @@
 		graphicsToggle.set(true);
 	}
 
-	let graphics = true;
-
-	graphicsToggle.subscribe((value) => graphics = value);
-
 </script>
 
 <header>
 	
 	<div class="corner">
-		{#if graphics}
+		{#if $graphicsToggle}
 		<button on:click={graphicsOff} style="margin-top: 1em; margin-left:1em; width:10em; height:2.5em;" class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm drac-btn-xs">
 			GRAPHICS: on  </button>
 		{:else}

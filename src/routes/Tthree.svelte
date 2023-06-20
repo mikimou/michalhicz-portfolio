@@ -3,6 +3,7 @@
 	import * as Three from 'three'
 	import * as Utils from 'three/src/math/MathUtils'
 	import Processing from './Processing.svelte';
+	import Fpslimit from './Fpslimit.svelte';
 	import { mousex, mousey, screenWidth, fov } from './stores';
 
 	const parameters = {
@@ -16,11 +17,11 @@
   		insideColor: "#ff6030",
   		outsideColor: "#1b3984"
 	};
-	
+
   </script>
   
   <div class="scene">
-	<Threlte.Canvas>
+	<Threlte.Canvas frameloop="demand">
 	  <!-- Camera -->
 	  <Threlte.PerspectiveCamera position={{ x: 40+($mousey*0.01), y: 40-($mousex*0.01), z: 30 }} fov={$fov}>
 		<!-- Controls -->
@@ -50,6 +51,7 @@
 	  />
 	  
 	<Processing/>
+
 	</Threlte.Canvas>
   </div>
   

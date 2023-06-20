@@ -15,18 +15,15 @@
 		mousey.set(event.clientY);
 	}
 
-	let graphics = true;
-	graphicsToggle.subscribe((value) => graphics = value);
-
 </script>
 
 <svelte:window bind:outerWidth={$screenWidth}/>
 
-{#if graphics}
+{#if $graphicsToggle}
 <Tthree />
 {/if}
 
-<div style={graphics == false ? 'background-color: #111217!important;' : 'background-color: transparent!important;'} class="app" on:mousemove={handleMousemove}>
+<div style={$graphicsToggle == false ? 'background-color: #111217!important;' : 'background-color: transparent!important;'} class="app" on:mousemove={handleMousemove}>
 	<Header />
 
 	<main>
