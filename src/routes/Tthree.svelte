@@ -38,7 +38,7 @@
 	  <!-- Light that casts a shadow -->
 	  <Threlte.DirectionalLight
 		color="white"
-		intensity={2.8}
+		intensity={2.7}
 		position={{ x: 40, y: 40 }}
 		
 	  />
