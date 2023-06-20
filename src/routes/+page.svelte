@@ -2,9 +2,23 @@
 	import Tthree from './Tthree.svelte';
 	import { goto } from '$app/navigation'
 
-	function keypresss(event) {
+	async function keypresss(event) {
 		if (event.key == 'y') {
 			goto('/three');
+		}
+		if (event.key == 'Y') {
+			goto('/three');
+		}
+	}
+
+	async function nav(item) {
+		switch (item) {
+			case 'portal':
+				goto('https://portal.michalhicz.eu/')
+				break;
+			default:
+				goto(item)
+				break;
 		}
 	}
 	
@@ -15,7 +29,7 @@
 	<meta name="description" content="Michal Hicz Portfolio" />
 </svelte:head>
 
-<svelte:window on:keydown|preventDefault={keypresss}/>
+<svelte:window on:keydown={keypresss}/>
 
 <section>
 	
@@ -29,6 +43,7 @@
 	<div class="window">
 		<div class="two">
 			<div class="drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md profile">
+				<!--imageeeeee-->
 				<center>
 					<div class="head">
 					<h2 style="font-weight: 500;" class="drac-heading drac-heading-2xl drac-text-black">Michal Hicz</h2>
@@ -36,7 +51,7 @@
 				</center>
 			</div>
 			<div class="drac-box drac-rounded-lg drac-p-md desc">
-				<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-lg">jakooo</p>
+				<p style="margin: 0em;" class="drac-text drac-line-height drac-text-purple-cyan drac-text-lg">Passionate software developer, Passionate software developer, Passionate software developer, </p>
 			</div>
 		</div>
 		<div class="two">
@@ -44,14 +59,14 @@
 		<div class="drac-box drac-rounded-lg drac-p-md info">
     		<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-purple-cyan">:~$ ./skills.sh</h2>
 			<br>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Javascript/Typescript... Advanced</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Python... Advanced</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Databases... Fundamentals</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">API (REST/GraphQL)... Advanced</p>
 			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Breaking stuff... Advanced</p>
 			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
 
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Show More? [<a href="/three">YES</a>/No] █</p>
+			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Show More? [<a href="/three">YES</a>/No] (Click <a href="/three">YES</a> or type 'y')</p>
 			
 			
 		</div>
@@ -60,11 +75,12 @@
 	<div style="height: 2em;"></div>
 	</div>
 		<div class="btns">
-			<a href="/three" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</a>
-			<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa"></a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</a>
+			<button on:click={() => nav('/')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Home</button>
+			<button on:click={() => nav('/three')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</button>
+			<button class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</button>
+			<button on:click={() => nav('portal')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</button>
+			<button class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Settings</button>
+			<button class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</button>
 	</div>
 	</div>
 	
@@ -118,7 +134,7 @@
 	}
 	.desc {
 		width: 25em;
-		height: 8em;
+		height: 9em;
 		margin-top: 2em;
 		margin-bottom: 0em;
 		margin-left: 0em;
@@ -133,8 +149,8 @@
 	}
 	.profile {
 		width: 25em;
-		height: 14em;
-		margin-top: 0em;
+		height: 8em;
+		margin-top: 4em;
 		margin-bottom: 2em;
 		margin-left: 0em;
 		margin-right: 2em;
