@@ -10,7 +10,6 @@
 	let teraz = new Date(), month, day, year;
 	year = teraz.getFullYear();
 
-
 	function handleMousemove(event) {
 		mousex.set(event.clientX);
 		mousey.set(event.clientY);
@@ -18,6 +17,8 @@
 
 	let graphics = true;
 	graphicsToggle.subscribe((value) => graphics = value);
+
+	setTimeout(() => { graphicsToggle.set(true); }, 1000);
 
 </script>
 
