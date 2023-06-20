@@ -6,13 +6,14 @@
     import { DotScreenPass } from 'three/examples/jsm/postprocessing/DotScreenPass';
     import { Vector2 } from 'three';
     import { screenWidth } from './stores'
+    import { pixelation } from './stores';
 
 
 	const { size, renderer, scene, camera, invalidate, advance} = Threlte.useThrelte();
 
 </script>
 
-<Threlte.Pass pass={new RenderPixelatedPass(80, scene, $camera)} />
+<Threlte.Pass pass={new RenderPixelatedPass($pixelation, scene, $camera)} />
 
 <style>
     html {

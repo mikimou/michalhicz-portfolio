@@ -9,3 +9,6 @@ export const graphicsToggle = writable(false);
 export const fov = writable(9);
 export const scale = writable(0);
 export const theme = writable("");
+export const mouseReactivity = writable(true);
+export const backLight = writable(2.7);
+export const pixelation = writable(80);

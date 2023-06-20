@@ -5,7 +5,7 @@
 	import 'dracula-ui/styles/dracula-ui.css'
 	import Tthree from './Tthree.svelte';
   	import Scene from './scene.svelte';
-	import { mousex, mousey, graphicsToggle, screenWidth } from './stores'
+	import { mousex, mousey, graphicsToggle, screenWidth, mouseReactivity } from './stores'
   	import { fly, fade  } from 'svelte/transition';
 
 	export let data;
@@ -20,14 +20,14 @@
 
 </script>
 
-<svelte:window bind:outerWidth={$screenWidth}/>
+<svelte:window bind:outerWidth={$screenWidth} on:mousemove={handleMousemove}/>
 
 {#if $graphicsToggle}
 <Tthree />
 {/if}
 
 {#key data.url}
-<div style={$graphicsToggle == false ? 'background-color: #111217!important;' : 'background-color: transparent!important;'} class="app" on:mousemove={handleMousemove}>
+<div style={$graphicsToggle == false ? 'background-color: #111217!important;' : 'background-color: transparent!important;'} class="app">
 	<Header />
 
 	<main in:fade={{delay: 250, duration: 250,}} out:fade={{delay: 0, duration: 200,}}>

@@ -4,7 +4,7 @@
 	import * as Utils from 'three/src/math/MathUtils'
 	import Processing from './Processing.svelte';
 	import Fpslimit from './Fpslimit.svelte';
-	import { mousex, mousey, screenWidth, fov } from './stores';
+	import { mousex, mousey, screenWidth, fov, mouseReactivity, backLight, pixelation } from './stores';
 
 	const parameters = {
   		count: 100000,
@@ -20,13 +20,14 @@
 
   </script>
   
+  {#key $pixelation}
   <div class="scene">
+	{#if $mouseReactivity}
 	<Threlte.Canvas frameloop="demand">
 	  <!-- Camera -->
-	  <Threlte.PerspectiveCamera position={{ x: 40+($mousey*0.01), y: 40-($mousex*0.01), z: 30 }} fov={$fov}>
-		<!-- Controls -->
-		<Threlte.OrbitControls enableDamping autoRotate />
-	  </Threlte.PerspectiveCamera>
+	  	<Threlte.PerspectiveCamera position={{ x: 40+($mousey*0.01), y: 40-($mousex*0.01), z: 30 }} fov={$fov}>
+		  <Threlte.OrbitControls enableDamping autoRotate />
+		</Threlte.PerspectiveCamera>
   
 	  <!-- Lights the scene equally -->
 	  <Threlte.AmbientLight color="white" intensity={1} />
@@ -34,7 +35,7 @@
 	  <!-- Light that casts a shadow -->
 	  <Threlte.DirectionalLight
 		color="white"
-		intensity={2.7}
+		intensity={$backLight}
 		position={{ x: 40, y: 40 }}
 		
 	  />
@@ -53,7 +54,41 @@
 	<Processing/>
 
 	</Threlte.Canvas>
+	{:else}
+	<Threlte.Canvas frameloop="demand">
+		<!-- Camera -->
+			<Threlte.PerspectiveCamera position={{ x: 40, y: 40, z: 30 }} fov={$fov}>
+			<Threlte.OrbitControls enableDamping autoRotate />
+		  </Threlte.PerspectiveCamera>
+	
+		<!-- Lights the scene equally -->
+		<Threlte.AmbientLight color="white" intensity={1} />
+	
+		<!-- Light that casts a shadow -->
+		<Threlte.DirectionalLight
+		  color="white"
+		  intensity={$backLight}
+		  position={{ x: 40, y: 40 }}
+		  
+		/>
+	
+		<!-- Floor -->
+		<Threlte.Mesh
+		  geometry={new Three.PlaneGeometry(20, 20)}
+		  material={new Three.MeshStandardMaterial({
+			color: '#1D1E26',
+			side: Three.DoubleSide,
+		  })}
+		  rotation={{ x: Utils.DEG2RAD * 90 }}
+		  receiveShadow
+		/>
+		
+	  <Processing/>
+  
+	  </Threlte.Canvas>
+	{/if}
   </div>
+  {/key}
   
   <style>
 	.scene {

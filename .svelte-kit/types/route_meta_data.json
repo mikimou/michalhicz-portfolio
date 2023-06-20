@@ -8,6 +8,10 @@
 		"src/routes/projects/+page.js",
 		"src/routes/+layout.js"
 	],
+	"/settings": [
+		"src/routes/settings/+page.js",
+		"src/routes/+layout.js"
+	],
 	"/three": [
 		"src/routes/three/+page.js",
 		"src/routes/+layout.js"
