@@ -203,9 +203,29 @@
 			margin-bottom: 6em;
 		}
     }
-	@media only screen and (max-width: 550px) {
+	@media only screen and (max-width: 800px) {
         .window {
-            width: 2em;
+            width: 28em;
+		}
+		.info {
+			width: 25em;
+		}
+		.btns {
+			width: 30em;
+			display: block;
+			text-align: center;
+		}
+		.profile {
+			margin-bottom: 2em;
+			margin-top: 0em;
+			margin-left: 0em;
+			margin-right: 0em;
+		}
+		.desc {
+			margin-bottom: 2em;
+			margin-top: 0em;
+			margin-left: 0em;
+			margin-right: 0em;
 		}
     }
 	.buttons {

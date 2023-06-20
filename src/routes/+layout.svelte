@@ -21,11 +21,13 @@
 </script>
 
 <svelte:head>
-	{#if $screenWidth > 550}
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+	{#key $screenWidth}
+	{#if $screenWidth < 550}
+		<meta name="viewport" content="width=device-width initial-scale=0.6">
 	{:else}
-		<meta name="viewport" content="width=device-width, initial-scale=0.7">
+		<meta name="viewport" content="width=device-width initial-scale=1">
 	{/if}
+	{/key}
 </svelte:head>
 
 <svelte:window bind:outerWidth={$screenWidth} on:mousemove={handleMousemove}/>
