@@ -30,6 +30,6 @@
         position: relative;
     }
     .card:hover {
-        box-shadow: 0 0 30px 5px black;
+        box-shadow: 0 0 40px 1px black;
     }
 </style>
