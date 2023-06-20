@@ -11,10 +11,7 @@
 
 </script>
 
-<Threlte.Pass pass={new RenderPixelatedPass(80, scene, $camera)} />
-
-
-<!--<Threlte.Pass pass={effect}/>-->
+<Threlte.Pass pass={new RenderPixelatedPass(100, scene, $camera)} />
 
 <style>
     html {
