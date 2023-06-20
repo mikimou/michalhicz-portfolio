@@ -16,18 +16,13 @@
   		insideColor: "#ff6030",
   		outsideColor: "#1b3984"
 	};
-
-	let mx = 0;
-	let my = 0;
-
-	mousex.subscribe((value) => mx = value);
-	mousey.subscribe((value) => my = value);
+	
   </script>
   
   <div class="scene">
 	<Threlte.Canvas>
 	  <!-- Camera -->
-	  <Threlte.PerspectiveCamera position={{ x: 40+(my*0.01), y: 40-(mx*0.01), z: 30 }} fov={$fov}>
+	  <Threlte.PerspectiveCamera position={{ x: 40+($mousey*0.01), y: 40-($mousex*0.01), z: 30 }} fov={$fov}>
 		<!-- Controls -->
 		<Threlte.OrbitControls enableDamping autoRotate />
 	  </Threlte.PerspectiveCamera>
