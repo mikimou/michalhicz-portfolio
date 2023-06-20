@@ -22,9 +22,9 @@
         <div class="window">
             
             <div class="content">
-                <ProjectCard href={""} head={"Michal Hicz Portfolio"} desc={"Portfolio website coded in SvelteKit by me."} button={'Explore Project'}/>
-                <ProjectCard href={""} head={"A.I. Lyrics Generator"} desc={"Website for generating lyrics based on typed topic made in SvelteKit."} button={'Explore Project'}/>
-                <ProjectCard href={""} head={"E-learning website"} desc={"E-Learning website with content made for network education."} button={'Explore Project'}/>
+                <ProjectCard href={""} head={"Michal Hicz Portfolio"} desc={"Portfolio website made with SvelteKit and Three.js."} button={'Explore Project'}/>
+                <ProjectCard href={""} head={"A.I. Lyrics Generator"} desc={"Website for generating lyrics based on typed topic made with SvelteKit and Webhooks."} button={'Explore Project'}/>
+                <ProjectCard href={""} head={"E-learning website"} desc={"E-Learning website with content primarily aimed for network education."} button={'Explore Project'}/>
             </div>
         </div>
     </div>
@@ -40,26 +40,11 @@
     }
     .content {
         min-height: 20em;
+        width: 78em;
         overflow: hidden;
         align-items: center;
         justify-content: center;
         
-    }
-    .card {
-        width: 20em;
-		height: 20em;
-		margin: 4em;
-		border-radius: 15px;
-		border-style: solid;
-		border-width: 0px;
-		box-shadow: 0 0 15px 1px black;
-        float:left;
-        display:inline;
-        transition: 200ms ease-in-out;
-        position: relative;
-    }
-    .card:hover {
-        box-shadow: 0 0 30px 5px black;
     }
     .sect {
         display: block;
@@ -67,7 +52,6 @@
     }
     .window {
 		background-color: #1D1E26!important;
-		padding: 2em;
         margin-top: 3em;
         margin-bottom: 3em;
         margin-left: 0em;
@@ -75,11 +59,22 @@
 		border-radius: 20px;
 		border-style: solid;
 		border-width: 0px;
-        width: 56em;
 		box-shadow: inset 0 0 15px 1px #0F0F16, 0 0 0px 0px #0a0a0e;
 		transition: 250ms ease-in-out;
         
 	}
+    @media only screen and (max-width: 1400px) {
+        .content {
+            width: 52em;
+        }
+
+    }
+    @media only screen and (max-width: 950px) {
+        .content {
+            width: 26em;
+        }
+
+    }
 	.window:hover {
 		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;
 	}

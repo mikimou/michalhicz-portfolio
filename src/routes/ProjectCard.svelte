@@ -19,7 +19,7 @@
     .card {
         width: 20em;
 		height: 22em;
-		margin: 4em;
+		margin: 3em;
 		border-radius: 15px;
 		border-style: solid;
 		border-width: 0px;

@@ -51,7 +51,7 @@
 				</center>
 			</div>
 			<div class="drac-box drac-rounded-lg drac-p-md desc">
-				<p style="margin: 0em;" class="drac-text drac-line-height drac-text-purple-cyan drac-text-lg">Passionate software developer, Passionate software developer, Passionate software developer, </p>
+				<p style="margin: 0em;" class="drac-text drac-line-height drac-text-purple-cyan drac-text-lg">Passionate software developer, networking specialist, </p>
 			</div>
 		</div>
 		<div class="two">
@@ -172,6 +172,42 @@
 	.window:hover {
 		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;
 	}
+	@media only screen and (max-width: 1200px) and (min-width: 550px) {
+        .window {
+            width: 40em;
+			display: block;
+        }
+		.btns {
+		}
+		.two {
+			display: inline-block;
+			text-align: center;
+		}
+		.group {
+			display: block;
+			text-align: center;
+		}
+		.desc {
+			margin-bottom: 2em;
+			margin-left: 2em;
+		}
+		.profile {
+			margin-top: 0em;
+			margin-left: 2em;
+		}
+		.info {
+			text-align: left;
+		}
+		.bounce {
+			margin-top: 6em;
+			margin-bottom: 6em;
+		}
+    }
+	@media only screen and (max-width: 550px) {
+        .window {
+            width: 2em;
+		}
+    }
 	.buttons {
 		height: 8em;
 	}

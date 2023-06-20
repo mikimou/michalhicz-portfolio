@@ -25,7 +25,7 @@
             <p class="drac-text drac-text-purple-cyan drac-text-sm">Toggle graphics in the top left corner</p>
             <p class="drac-text drac-text-purple-cyan drac-text-sm">Reload page to reset settings</p><br>
             <input type="checkbox" bind:checked={$mouseReactivity} id="normal" class="drac-checkbox drac-checkbox-purple"/>
-            <label for="normal" class="drac-text drac-text-purple-cyan">Mouse Reactivity</label><br><br><br>
+            <label for="normal" class="drac-text drac-text-purple-cyan">Background mouse reactivity</label><br><br><br>
             <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background FOV:</h2><br>
             <input type="number" bind:value={$fov} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/><br><br>
             <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background light:</h2><br>
