@@ -112,7 +112,7 @@
 		transition: 250ms ease-in-out;
 	}
 	.btns:hover {
-		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 25px 5px #0a0a0e;
+		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;
 	}
 	.two {
 		
@@ -170,7 +170,7 @@
 		transition: 250ms ease-in-out;
 	}
 	.window:hover {
-		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 25px 5px #0a0a0e;
+		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;
 	}
 	.buttons {
 		height: 8em;
