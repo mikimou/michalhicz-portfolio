@@ -18,8 +18,6 @@
 	let graphics = true;
 	graphicsToggle.subscribe((value) => graphics = value);
 
-	setTimeout(() => { graphicsToggle.set(true); }, 1000);
-
 </script>
 
 {#if graphics}

@@ -9,15 +9,6 @@
 
 	const { size, renderer, scene, camera, invalidate, advance} = Threlte.useThrelte();
 
-    let invert = false;
-    let color = false;
-    let resolution = 0.15;
-    let characters = ' .:-+*=%@#'
-
-    const effect = new AsciiEffect(renderer, characters, { invert, color, resolution })
-
-   
-
 </script>
 
 <Threlte.Pass pass={new RenderPixelatedPass(100, scene, $camera)} />
