@@ -220,6 +220,6 @@
 	.aa {
 		font-weight: 500;
 		box-shadow: 0 0 10px 1px black;
-		transition: 250ms ease-in-out;
+		transition: 200ms ease-in-out;
 	}
 </style>
