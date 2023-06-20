@@ -27,7 +27,7 @@
   <div class="scene">
 	<Threlte.Canvas>
 	  <!-- Camera -->
-	  <Threlte.PerspectiveCamera position={{ x: 40+(my*0.01), y: 40-(mx*0.01), z: 30 }} fov={$screenWidth > 1925 ? 10 : 20}>
+	  <Threlte.PerspectiveCamera position={{ x: 40+(my*0.01), y: 40-(mx*0.01), z: 30 }} fov={10}>
 		<!-- Controls -->
 		<Threlte.OrbitControls enableDamping autoRotate />
 	  </Threlte.PerspectiveCamera>
