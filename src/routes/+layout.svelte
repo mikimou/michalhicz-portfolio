@@ -5,12 +5,12 @@
 	import 'dracula-ui/styles/dracula-ui.css'
 	import Tthree from './Tthree.svelte';
   	import Scene from './scene.svelte';
-	import { mousex, mousey, graphicsToggle } from './stores'
+	import { mousex, mousey, graphicsToggle, screenWidth } from './stores'
 
 	let teraz = new Date(), month, day, year;
 	year = teraz.getFullYear();
 
-	function handleMousemove(event) {
+	async function handleMousemove(event) {
 		mousex.set(event.clientX);
 		mousey.set(event.clientY);
 	}
@@ -19,6 +19,8 @@
 	graphicsToggle.subscribe((value) => graphics = value);
 
 </script>
+
+<svelte:window bind:outerWidth={$screenWidth}/>
 
 {#if graphics}
 <Tthree />
