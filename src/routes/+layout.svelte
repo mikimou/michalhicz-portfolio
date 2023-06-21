@@ -34,11 +34,19 @@
 		fov.set(9);
 	}
 
+	$: if ($screenWidth < 1000) {
+		graphicsToggle.set(false);
+	}
+	$: if ($screenWidth > 1000) {
+		graphicsToggle.set(true);
+	}
+
+
 </script>
 
 <svelte:head>
 	{#key $screenWidth}
-	{#if $screenWidth < 550}
+	{#if $screenWidth < 600}
 		<meta name="viewport" content="width=device-width initial-scale=0.6">
 	{:else}
 		<meta name="viewport" content="width=device-width initial-scale=1">
