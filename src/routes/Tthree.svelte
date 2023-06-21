@@ -3,8 +3,7 @@
 	import * as Three from 'three'
 	import * as Utils from 'three/src/math/MathUtils'
 	import Processing from './Processing.svelte';
-	import Fpslimit from './Fpslimit.svelte';
-	import { mousex, mousey, screenWidth, fov, mouseReactivity, backLight, pixelation } from './stores';
+	import { mousex, mousey, fov, mouseReactivity, backLight, pixelation, bloom } from './stores';
 
 	const parameters = {
   		count: 100000,
@@ -18,85 +17,72 @@
   		outsideColor: "#1b3984"
 	};
 
-  </script>
+</script>
   
-  {#key $pixelation}
-  <div class="scene">
-	{#if $mouseReactivity}
-	<Threlte.Canvas frameloop="demand">
-	  <!-- Camera -->
-	  	<Threlte.PerspectiveCamera position={{ x: 40+($mousey*0.01), y: 40-($mousex*0.01), z: 30 }} fov={$fov}>
-		  <Threlte.OrbitControls enableDamping autoRotate />
-		</Threlte.PerspectiveCamera>
-  
-	  <!-- Lights the scene equally -->
-	  <Threlte.AmbientLight color="white" intensity={1} />
-  
-	  <!-- Light that casts a shadow -->
-	  <Threlte.DirectionalLight
-		color="white"
-		intensity={$backLight}
-		position={{ x: 40, y: 40 }}
+{#key $pixelation}
+	<div class="scene">
+		{#if $mouseReactivity}
+			<Threlte.Canvas frameloop="demand">
+				<Threlte.PerspectiveCamera position={{ x: 40+($mousey*0.01), y: 40-($mousex*0.01), z: 30 }} fov={$fov}>
+					<Threlte.OrbitControls enableDamping autoRotate />
+				</Threlte.PerspectiveCamera>
 		
-	  />
-  
-	  <!-- Floor -->
-	  <Threlte.Mesh
-		geometry={new Three.PlaneGeometry(20, 20)}
-		material={new Three.MeshStandardMaterial({
-		  color: '#1D1E26',
-		  side: Three.DoubleSide,
-		})}
-		rotation={{ x: Utils.DEG2RAD * 90 }}
-		receiveShadow
-	  />
-	  
-	<Processing/>
+				<Threlte.AmbientLight color="white" intensity={1} />
+		
+				<Threlte.DirectionalLight
+					color="white"
+					intensity={$backLight}
+					position={{ x: 40, y: 40 }}	/>
+		
+				<Threlte.Mesh
+					geometry={new Three.PlaneGeometry(20, 20)}
+					material={new Three.MeshStandardMaterial({
+					color: '#1D1E26',
+					side: Three.DoubleSide,
+					})}
+					rotation={{ x: Utils.DEG2RAD * 90 }}
+					receiveShadow/>
+				
+				<Processing/>
 
-	</Threlte.Canvas>
-	{:else}
-	<Threlte.Canvas frameloop="demand">
-		<!-- Camera -->
-			<Threlte.PerspectiveCamera position={{ x: 40, y: 40, z: 30 }} fov={$fov}>
-			<Threlte.OrbitControls enableDamping autoRotate />
-		  </Threlte.PerspectiveCamera>
+			</Threlte.Canvas>
+		{:else}
+			<Threlte.Canvas frameloop="demand">
+				<Threlte.PerspectiveCamera position={{ x: 40, y: 40, z: 30 }} fov={$fov}>
+					<Threlte.OrbitControls enableDamping autoRotate />
+				</Threlte.PerspectiveCamera>
 	
-		<!-- Lights the scene equally -->
-		<Threlte.AmbientLight color="white" intensity={1} />
+				<Threlte.AmbientLight color="white" intensity={1} />
 	
-		<!-- Light that casts a shadow -->
-		<Threlte.DirectionalLight
-		  color="white"
-		  intensity={$backLight}
-		  position={{ x: 40, y: 40 }}
-		  
-		/>
-	
-		<!-- Floor -->
-		<Threlte.Mesh
-		  geometry={new Three.PlaneGeometry(20, 20)}
-		  material={new Three.MeshStandardMaterial({
-			color: '#1D1E26',
-			side: Three.DoubleSide,
-		  })}
-		  rotation={{ x: Utils.DEG2RAD * 90 }}
-		  receiveShadow
-		/>
 		
-	  <Processing/>
+				<Threlte.DirectionalLight
+					color="white"
+					intensity={$backLight}
+					position={{ x: 40, y: 40 }}/>
+
+				<Threlte.Mesh
+					geometry={new Three.PlaneGeometry(20, 20)}
+					material={new Three.MeshStandardMaterial({
+						color: '#1D1E26',
+						side: Three.DoubleSide,
+					})}
+					rotation={{ x: Utils.DEG2RAD * 90 }}
+					receiveShadow/>
+				
+				<Processing/>
   
-	  </Threlte.Canvas>
-	{/if}
-  </div>
-  {/key}
+	  		</Threlte.Canvas>
+		{/if}
+  	</div>
+{/key}
   
-  <style>
+<style>
 	.scene {
-	  width: 100%;
-	  height: 100%;
-	  position: fixed;
-	  z-index: -1;
-	  background-color: #111217!important;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: -1;
+		background-color: #111217!important;
 	}
-  </style>
+</style>
   

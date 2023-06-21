@@ -13,14 +13,13 @@
     <div class="head">
         <center>
             <div style="display:flex; justify-content: center;">
-            <h2 style="font-weight: 500;" class="drac-heading drac-heading-2xl drac-text-purple-cyan">Projects</h2>
-            <button on:click={() => goto('/')} class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm drac-btn-sm">GO BACK</button>
+                <h2 style="font-weight: 500;" class="drac-heading drac-heading-2xl drac-text-purple-cyan">Projects</h2>
+                <button on:click={() => goto('/')} class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm drac-btn-sm">GO BACK</button>
             </div>
         </center>
     </div>
     <div class="body">
         <div class="window">
-            
             <div class="content">
                 <ProjectCard href={""} head={"Michal Hicz Portfolio"} desc={"Portfolio website made with SvelteKit and Three.js."} button={'Explore Project'}/>
                 <ProjectCard href={""} head={"A.I. Lyrics Generator"} desc={"Website for generating lyrics based on typed topic made with SvelteKit and Webhooks."} button={'Explore Project'}/>
@@ -44,7 +43,6 @@
         overflow: hidden;
         align-items: center;
         justify-content: center;
-        
     }
     .sect {
         display: block;
@@ -61,7 +59,6 @@
 		border-width: 0px;
 		box-shadow: inset 0 0 15px 1px #0F0F16, 0 0 0px 0px #0a0a0e;
 		transition: 250ms ease-in-out;
-        
 	}
     @media only screen and (max-width: 1400px) {
         .content {

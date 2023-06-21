@@ -1,6 +1,5 @@
 <script>
     import { goto } from '$app/navigation'
-    import ProjectCard from '../ProjectCard.svelte'
     import { fov, mouseReactivity, backLight, pixelation } from '../stores'
 
 </script>
@@ -22,18 +21,17 @@
     <div class="body">
         <div class="window">
             <center>
-            <p class="drac-text drac-text-purple-cyan drac-text-sm">Toggle graphics in the top left corner</p>
-            <p class="drac-text drac-text-purple-cyan drac-text-sm">Reload page to reset settings</p><br>
-            <input type="checkbox" bind:checked={$mouseReactivity} id="normal" class="drac-checkbox drac-checkbox-purple"/>
-            <label for="normal" class="drac-text drac-text-purple-cyan">Background mouse reactivity</label><br><br><br>
-            <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background FOV:</h2><br>
-            <input type="number" bind:value={$fov} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/><br><br>
-            <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background light:</h2><br>
-            <input type="number" bind:value={$backLight} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/><br><br>
-            <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background Pixelation:</h2><br>
-            <input type="number" bind:value={$pixelation} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/><br><br>
-
-        </center>
+                <p class="drac-text drac-text-purple-cyan drac-text-sm">Toggle graphics in the top left corner</p>
+                <p class="drac-text drac-text-purple-cyan drac-text-sm">Reload page to reset settings</p><br>
+                <input type="checkbox" bind:checked={$mouseReactivity} id="mouse" class="drac-checkbox drac-checkbox-purple"/>
+                <label for="normal" class="drac-text drac-text-purple-cyan">Background mouse reactivity</label><br><br><br>
+                <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background FOV:</h2><br>
+                <input type="number" bind:value={$fov} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/><br><br>
+                <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background light:</h2><br>
+                <input type="number" bind:value={$backLight} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/><br><br>
+                <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background Pixelation:</h2><br>
+                <input type="number" bind:value={$pixelation} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/>
+            </center>
         </div>
     </div>
 </div>
@@ -51,7 +49,6 @@
         overflow: hidden;
         align-items: center;
         justify-content: center;
-        
     }
     .card {
         width: 20em;
@@ -86,7 +83,6 @@
         width: 25em;
 		box-shadow: inset 0 0 15px 1px #0F0F16, 0 0 0px 0px #0a0a0e;
 		transition: 250ms ease-in-out;
-        
 	}
 	.window:hover {
 		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;

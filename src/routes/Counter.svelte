@@ -1,9 +1,11 @@
 <script>
-	import { spring } from 'svelte/motion';
 	import { onMount } from 'svelte';
 
+	export let textAfterCount = '';
+	export let date = 'May 29, 2024 15:37:25';
+
 	// main page odpocet casu
-	var countDownDate = new Date("May 29, 2024 15:37:25").getTime();
+	var countDownDate = new Date(date).getTime();
 	
   	// Get today's date and time
   	let now = new Date();
@@ -37,7 +39,7 @@
 			{#if distance > 0}
 				<strong class="drac-text drac-text-pink-purple">{days} D {hours} H <br>{minutes} M {seconds} S</strong>	
 			{:else}
-				<strong>Stránka sa spúšťa onedlho!</strong>	
+				<strong>{textAfterCount}</strong>	
 			{/if}
 		</div>
 	</div>

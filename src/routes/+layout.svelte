@@ -1,12 +1,10 @@
 <script>
-	import { onMount } from 'svelte';
 	import Header from './Header.svelte';
 	import './styles.css';
 	import 'dracula-ui/styles/dracula-ui.css'
 	import Tthree from './Tthree.svelte';
-  	import Scene from './scene.svelte';
-	import { mousex, mousey, graphicsToggle, screenWidth, mouseReactivity, fov, theme } from './stores'
-  	import { fly, fade  } from 'svelte/transition';
+	import { mousex, mousey, graphicsToggle, screenWidth, fov } from './stores'
+  	import { fade  } from 'svelte/transition';
 
 	export let data;
 
@@ -46,33 +44,32 @@
 
 <svelte:head>
 	{#key $screenWidth}
-	{#if $screenWidth < 600}
-		<meta name="viewport" content="width=device-width initial-scale=0.6">
-	{:else}
-		<meta name="viewport" content="width=device-width initial-scale=1">
-	{/if}
+		{#if $screenWidth < 600}
+			<meta name="viewport" content="width=device-width initial-scale=0.6">
+		{:else}
+			<meta name="viewport" content="width=device-width initial-scale=1">
+		{/if}
 	{/key}
-	<link rel="stylesheet" href="/{$theme}.css">
 </svelte:head>
 
 <svelte:window bind:outerWidth={$screenWidth} on:mousemove={handleMousemove}/>
 
 {#if $graphicsToggle}
-<Tthree />
+	<Tthree />
 {/if}
 
 {#key data.url}
-<div style={$graphicsToggle == false ? 'background-color: #111217!important;' : 'background-color: transparent!important;'} class="app">
-	<Header />
+	<div style={$graphicsToggle == false ? 'background-color: #111217!important;' : 'background-color: transparent!important;'} class="app">
+		<Header />
 
-	<main in:fade={{delay: 250, duration: 250,}} out:fade={{delay: 0, duration: 200,}}>
-		<slot />
-	</main>
-	
-	<footer>
-		<p class="drac-text drac-text-grey-secondary oke">{year} developed by Michal Hicz</p>
-	</footer>
-</div>
+		<main in:fade={{delay: 250, duration: 250,}} out:fade={{delay: 0, duration: 200,}}>
+			<slot />
+		</main>
+		
+		<footer>
+			<p class="drac-text drac-text-grey-secondary oke">{year} developed by Michal Hicz</p>
+		</footer>
+	</div>
 {/key}
 
 <style>

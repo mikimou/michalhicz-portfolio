@@ -1,7 +1,5 @@
 <script>
-	import Tthree from './Tthree.svelte';
 	import { goto } from '$app/navigation'
-	import { themeF, themeS } from './stores';
 
 	async function keypresss(event) {
 		if (event.key == 'y') {
@@ -33,58 +31,46 @@
 <svelte:window on:keydown={keypresss}/>
 
 <section>
-	
-	<!--<div class="welcome">
-		 <picture>
-			<img src={logo} alt="" />
-		</picture>
-	</div>-->
 	<div class="bounce">
-	<div class="group">
-	<div class="window">
-		<div class="two">
-			<div class="drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md profile">
-				<!--imageeeeee-->
-				<center>
-					<div class="head">
-					<h2 style="font-weight: 500;" class="drac-heading drac-heading-2xl drac-text-black">Michal Hicz</h2>
+		<div class="group">
+			<div class="window">
+				<div class="two">
+					<div class="drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md profile">
+						<!--imageeeeee-->
+						<center>
+							<div class="head">
+								<h2 style="font-weight: 500;" class="drac-heading drac-heading-2xl drac-text-black">Michal Hicz</h2>
+							</div>
+						</center>
 					</div>
-				</center>
+					<div class="drac-box drac-rounded-lg drac-p-md desc">
+						<p style="margin: 0em;" class="drac-text drac-line-height drac-text-lg drac-text-purple-cyan">Passionate software developer, networking specialist, </p>
+					</div>
+				</div>
+				<div class="two">
+					<div class="drac-box drac-rounded-lg drac-p-md info">
+						<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-purple-cyan">:~$ ./skills.sh</h2>
+						<br>
+						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Javascript/Typescript... Advanced</p>
+						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Python... Advanced</p>
+						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Databases... Fundamentals</p>
+						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">API (REST/GraphQL)... Advanced</p>
+						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Breaking stuff... Advanced</p>
+						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
+						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Show More? [<a href="/three">YES</a>/No] (Click on <a href="/three">YES</a> or type 'y')</p>
+					</div>
+				</div>
 			</div>
-			<div class="drac-box drac-rounded-lg drac-p-md desc">
-				<p style="margin: 0em;" class="drac-text drac-line-height drac-text-lg drac-text-purple-cyan">Passionate software developer, networking specialist, </p>
-			</div>
+			<div style="height: 2em;"></div>
 		</div>
-		<div class="two">
-			
-		<div class="drac-box drac-rounded-lg drac-p-md info">
-    		<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-purple-cyan">:~$ ./skills.sh</h2>
-			<br>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Javascript/Typescript... Advanced</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Python... Advanced</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Databases... Fundamentals</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">API (REST/GraphQL)... Advanced</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Breaking stuff... Advanced</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
-			<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Show More? [<a href="/three">YES</a>/No] (Click on <a href="/three">YES</a> or type 'y')</p>
-			
-			
-		</div>
-		</div>
-	</div>
-	<div style="height: 2em;"></div>
-	</div>
 		<div class="btns">
 			<button on:click={() => nav('/three')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</button>
 			<button on:click={() => nav('/projects')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</button>
 			<button on:click={() => nav('portal')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</button>
 			<button on:click={() => nav('/settings')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Settings</button>
 			<button class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</button>
+		</div>
 	</div>
-	</div>
-	
-
-
 </section>
 
 <style>
