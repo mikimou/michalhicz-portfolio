@@ -3,7 +3,6 @@
 	import { RenderPixelatedPass } from 'three/examples/jsm/postprocessing/RenderPixelatedPass';
     import { pixelation } from './stores'
 
-
 	const { scene, camera } = Threlte.useThrelte();
 
 </script>
