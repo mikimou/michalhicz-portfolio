@@ -1,6 +1,7 @@
 <script>
 	import Tthree from './Tthree.svelte';
 	import { goto } from '$app/navigation'
+	import { themeF, themeS } from './stores';
 
 	async function keypresss(event) {
 		if (event.key == 'y') {
@@ -51,7 +52,7 @@
 				</center>
 			</div>
 			<div class="drac-box drac-rounded-lg drac-p-md desc">
-				<p style="margin: 0em;" class="drac-text drac-line-height drac-text-purple-cyan drac-text-lg">Passionate software developer, networking specialist, </p>
+				<p style="margin: 0em;" class="drac-text drac-line-height drac-text-lg drac-text-purple-cyan">Passionate software developer, networking specialist, </p>
 			</div>
 		</div>
 		<div class="two">

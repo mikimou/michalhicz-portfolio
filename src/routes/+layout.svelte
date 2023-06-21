@@ -5,7 +5,7 @@
 	import 'dracula-ui/styles/dracula-ui.css'
 	import Tthree from './Tthree.svelte';
   	import Scene from './scene.svelte';
-	import { mousex, mousey, graphicsToggle, screenWidth, mouseReactivity, fov } from './stores'
+	import { mousex, mousey, graphicsToggle, screenWidth, mouseReactivity, fov, theme } from './stores'
   	import { fly, fade  } from 'svelte/transition';
 
 	export let data;
@@ -52,6 +52,7 @@
 		<meta name="viewport" content="width=device-width initial-scale=1">
 	{/if}
 	{/key}
+	<link rel="stylesheet" href="/{$theme}.css">
 </svelte:head>
 
 <svelte:window bind:outerWidth={$screenWidth} on:mousemove={handleMousemove}/>
@@ -69,12 +70,17 @@
 	</main>
 	
 	<footer>
-		<p class="drac-text drac-text-grey-secondary">{year} developed by Michal Hicz</p>
+		<p class="drac-text drac-text-grey-secondary oke">{year} developed by Michal Hicz</p>
 	</footer>
 </div>
 {/key}
 
 <style>
+	.bb {
+		background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	}
 	.app {
 		display: flex;
 		flex-direction: column;

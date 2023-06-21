@@ -8,7 +8,11 @@ export const screenWidth = writable(0);
 export const graphicsToggle = writable(true);
 export const fov = writable(9);
 export const scale = writable(0);
-export const theme = writable("");
+export const theme = writable("sunshine");
 export const mouseReactivity = writable(true);
 export const backLight = writable(2.7);
 export const pixelation = writable(80);
+
+/* Theming */
+export const themeF = writable(false);
+export const themeS = writable(true);

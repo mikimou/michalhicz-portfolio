@@ -1,6 +1,5 @@
 // See https://kit.svelte.dev/docs/types#app
 // for information about these interfaces
-import 'dracula-ui/styles/dracula-ui.css'
 
 
 declare global {
