@@ -5,7 +5,7 @@
 	import 'dracula-ui/styles/dracula-ui.css'
 	import Tthree from './Tthree.svelte';
   	import Scene from './scene.svelte';
-	import { mousex, mousey, graphicsToggle, screenWidth, mouseReactivity } from './stores'
+	import { mousex, mousey, graphicsToggle, screenWidth, mouseReactivity, fov } from './stores'
   	import { fly, fade  } from 'svelte/transition';
 
 	export let data;
@@ -16,6 +16,22 @@
 	async function handleMousemove(event) {
 		mousex.set(event.clientX);
 		mousey.set(event.clientY);
+	}
+
+	$: if ($screenWidth < 1500) {
+		fov.set(11);
+	} 
+	$: if ($screenWidth < 1100) {
+		fov.set(12);
+	}
+	$: if ($screenWidth < 800) {
+		fov.set(13);
+	}
+	$: if ($screenWidth < 500) {
+		fov.set(14);
+	}
+	$: if ($screenWidth > 1500) {
+		fov.set(9);
 	}
 
 </script>
