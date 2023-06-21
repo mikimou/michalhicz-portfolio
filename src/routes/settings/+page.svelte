@@ -30,7 +30,7 @@
                 <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background light:</h2><br>
                 <input type="number" bind:value={$backLight} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/><br><br>
                 <h2 class="drac-heading drac-text-purple-cyan drac-heading-lg">Background Pixelation:</h2><br>
-                <input type="number" bind:value={$pixelation} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/><br>
+                <input type="number" bind:value={$pixelation} style="width: 6em;" placeholder="" class="drac-input drac-input-white drac-text-white drac-input-border-sm"/><br><br>
             </center>
         </div>
     </div>
