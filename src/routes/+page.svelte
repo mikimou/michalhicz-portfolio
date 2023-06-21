@@ -159,7 +159,7 @@
 	.window:hover {
 		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;
 	}
-	@media only screen and (max-width: 1200px) and (min-width: 550px) {
+	@media only screen and (max-width: 1200px) and (min-width: 600px) {
         .window {
             width: 40em;
 			display: block;
@@ -190,7 +190,7 @@
 			margin-bottom: 6em;
 		}
     }
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 820px) {
         .window {
             width: 28em;
 		}
