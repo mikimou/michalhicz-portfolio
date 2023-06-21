@@ -3,7 +3,7 @@
 	import * as Three from 'three'
 	import * as Utils from 'three/src/math/MathUtils'
 	import Processing from './Processing.svelte';
-	import { mousex, mousey, fov, mouseReactivity, backLight, pixelation, bloom } from './stores';
+	import { mousex, mousey, fov, mouseReactivity, backLight, pixelation } from './stores';
 
 	const parameters = {
   		count: 100000,
