@@ -70,7 +70,7 @@
 		</main>
 		
 		<footer>
-			<p class="drac-text drac-text-grey-secondary oke">{year} developed by Michal Hicz</p>
+			<p class="drac-text drac-text-grey-secondary">{year} developed by Michal Hicz</p>
 		</footer>
 	</div>
 {/key}
