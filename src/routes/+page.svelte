@@ -55,7 +55,7 @@
 		<div class="btns">
 			<a href="/three" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</a>
 			<a href="/projects" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</a>
-			<a href="https://portal.michalhicz.eu/" on:click={() => nav('portal')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</a>
+			<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</a>
 			<a href="/settings" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Settings</a>
 			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</a>
 		</div>

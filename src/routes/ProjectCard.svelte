@@ -1,8 +1,8 @@
 <script>
-    export const href = "";
-    export const head = "";
-    export const desc = "";
-    export const button = "";
+    export let href = "";
+    export let head = "";
+    export let desc = "";
+    export let button = "";
 
 </script> 
 
@@ -10,7 +10,7 @@
     <h2 style="font-weight: 600; font-size: 2em;" class="drac-heading drac-text-black">{head}</h2>
     <div style="height: 1em;"></div>
     <p style="font-weight: 500;" class="drac-text drac-text-black drac-text-md">{desc}</p>
-    <a href=href style="margin: 0;position:absolute; bottom:2em; color: #8BD2F2;" class="drac-btn drac-bg-black drac-text-grey-secondary drac-m-sm drac-btn-md">{button}</a>
+    <a href="{href}" style="margin: 0;position:absolute; bottom:2em; color: #8BD2F2;" class="drac-btn drac-bg-black drac-text-grey-secondary drac-m-sm drac-btn-md">{button}</a>
 </div>
 
 <style>
@@ -30,4 +30,8 @@
     .card:hover {
         box-shadow: 0 0 40px 1px black;
     }
+    a { 
+		text-decoration: none!important;
+		
+	}
 </style>

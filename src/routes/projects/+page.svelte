@@ -1,5 +1,4 @@
 <script>
-    import { goto } from '$app/navigation'
     import ProjectCard from '../ProjectCard.svelte'
 
 </script>
@@ -76,9 +75,7 @@
 		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;
 	}
     a { 
-		text-decoration: none!important;;
-		color: #21222C!important;
-		
+		text-decoration: none!important;
 	}
 	.aa:hover {
 		box-shadow: 0 0 0px 0px black;
