@@ -65,7 +65,7 @@
 	<div style={$graphicsToggle == false ? 'background-color: #111217!important;' : 'background-color: transparent!important;'} class="app">
 		<Header />
 
-		<main in:fade={{delay: 250, duration: 250,}} out:fade={{delay: 0, duration: 200,}}>
+		<main in:fade={{delay: 150, duration: 200,}} out:fade={{delay: 0, duration: 150,}}>
 			<slot />
 		</main>
 		
