@@ -9,17 +9,6 @@
 			goto('/three');
 		}
 	}
-
-	async function nav(item) {
-		switch (item) {
-			case 'portal':
-				goto('https://portal.michalhicz.eu/')
-				break;
-			default:
-				goto(item)
-				break;
-		}
-	}
 	
 </script>
 
@@ -64,11 +53,11 @@
 			<div style="height: 2em;"></div>
 		</div>
 		<div class="btns">
-			<button on:click={() => nav('/three')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</button>
-			<button on:click={() => nav('/projects')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</button>
-			<button on:click={() => nav('portal')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</button>
-			<button on:click={() => nav('/settings')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Settings</button>
-			<button class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</button>
+			<a href="/three" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</a>
+			<a href="/projects" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</a>
+			<a href="https://portal.michalhicz.eu/" on:click={() => nav('portal')} class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</a>
+			<a href="/settings" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Settings</a>
+			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</a>
 		</div>
 	</div>
 </section>

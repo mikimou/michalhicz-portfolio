@@ -14,7 +14,7 @@
         <center>
             <div style="display:flex; justify-content: center;">
             <h2 style="font-weight: 500;" class="drac-heading drac-heading-2xl drac-text-purple-cyan">Settings</h2>
-            <button on:click={() => goto('/')} class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm drac-btn-sm">GO BACK</button>
+            <a href="/" class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm drac-btn-sm">GO BACK</a>
             </div>
         </center>
     </div>

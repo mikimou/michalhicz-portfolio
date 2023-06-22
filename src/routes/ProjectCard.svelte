@@ -1,10 +1,8 @@
 <script>
-    import { goto } from '$app/navigation'
-
-    export let href = "";
-    export let head = "";
-    export let desc = "";
-    export let button = "";
+    export const href = "";
+    export const head = "";
+    export const desc = "";
+    export const button = "";
 
 </script> 
 
@@ -12,7 +10,7 @@
     <h2 style="font-weight: 600; font-size: 2em;" class="drac-heading drac-text-black">{head}</h2>
     <div style="height: 1em;"></div>
     <p style="font-weight: 500;" class="drac-text drac-text-black drac-text-md">{desc}</p>
-    <button style="margin: 0;position:absolute; bottom:2em; color: #8BD2F2;" on:click={() => goto(href)} class="drac-btn drac-bg-black drac-text-grey-secondary drac-m-sm drac-btn-md">{button}</button>
+    <a href=href style="margin: 0;position:absolute; bottom:2em; color: #8BD2F2;" class="drac-btn drac-bg-black drac-text-grey-secondary drac-m-sm drac-btn-md">{button}</a>
 </div>
 
 <style>
