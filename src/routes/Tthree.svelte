@@ -5,18 +5,6 @@
 	import Processing from './Processing.svelte';
 	import { mousex, mousey, fov, mouseReactivity, backLight, pixelation } from './stores';
 
-	const parameters = {
-  		count: 100000,
-  		size: 0.01,
-  		radius: 5,
-  		branches: 3,
-  		spin: 1,
-  		randomness: 0.2,
-  		randomnessPower: 3,
-  		insideColor: "#ff6030",
-  		outsideColor: "#1b3984"
-	};
-
 </script>
   
 {#key $pixelation}
