@@ -42,20 +42,6 @@
 
 </script>
 
-<svelte:head>
-	{#key $screenWidth}
-		{#if $screenWidth < 650 && $screenWidth >= 450}
-			<meta name="viewport" content="width=device-width initial-scale=0.7">
-		{:else if $screenWidth < 450  && $screenWidth >= 360}
-			<meta name="viewport" content="width=device-width initial-scale=0.6">
-		{:else if $screenWidth < 360}
-			<meta name="viewport" content="width=device-width initial-scale=0.45">
-		{:else}
-			<meta name="viewport" content="width=device-width initial-scale=1">
-		{/if}
-	{/key}
-</svelte:head>
-
 <svelte:window bind:outerWidth={$screenWidth} on:mousemove={handleMousemove}/>
 
 {#if $graphicsToggle}

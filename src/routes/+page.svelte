@@ -67,15 +67,6 @@
 	.head {
 		
 	}
-	.bounce {
-        animation-name: bounce;
-        animation-timing-function: ease;
-    }
-    @keyframes bounce {
-        0%   { transform: translateY(0); }
-        50%  { transform: translateY(-10px); }
-        100% { transform: translateY(0); }
-    }
 	.btns {
 		overflow:visible;
 		display: flex;
@@ -95,7 +86,6 @@
 		
 	}
 	.info {
-		
 		width: 35em;
 		margin: 0em;
 		height: 100%;
@@ -149,7 +139,7 @@
 	.window:hover {
 		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;
 	}
-	@media only screen and (max-width: 1200px) and (min-width: 600px) {
+	@media only screen and (max-width: 1200px) {
         .window {
             width: 40em;
 			display: block;
@@ -220,13 +210,6 @@
 		width: 100%;
 		font-size: 4rem;
 	}
-
-	@media only screen and (max-width: 450px) {
-		h1 {
-			font-size: 3.5rem;
-		}
-	}
-
 	.welcome {
 		display: block;
 		position: relative;
