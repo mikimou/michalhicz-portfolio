@@ -39,8 +39,7 @@
 		"install": "^0.13.0",
 		"npm": "^9.6.1",
 		"pocketbase": "^0.12.1",
-		"postprocessing": "^6.32.1",
-		"threlte": "^3.13.1"
+		"postprocessing": "^6.32.1"
 	},
 	"exports": {
 		"./package.json": "./package.json",
