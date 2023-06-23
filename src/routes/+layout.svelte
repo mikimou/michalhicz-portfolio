@@ -32,7 +32,8 @@
 		fov.set(9);
 	}
 
-	$: if ($screenWidth < 900) {
+	// GRAPHICS TOGGLE SCALING
+	$: if ($screenWidth <= 900) {
 		graphicsToggle.set(false);
 	}
 	$: if ($screenWidth > 900) {

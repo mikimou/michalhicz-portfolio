@@ -6,6 +6,7 @@
 			goto('/three');
 		}
 		if (event.key == 'Y') {
+
 			goto('/three');
 		}
 	}
