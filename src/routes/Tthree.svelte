@@ -54,6 +54,11 @@
 	
 				<Threlte.AmbientLight color="white" intensity={1} />
 
+				<Threlte.DirectionalLight
+					color="white"
+					intensity={$backLight}
+					position={{ x: 40, y: 40 }}	/>
+
 				<Threlte.Mesh
 					geometry={new Three.PlaneGeometry(20, 20)}
 					material={new Three.MeshStandardMaterial({
