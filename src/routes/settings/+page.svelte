@@ -1,5 +1,4 @@
 <script>
-    import { goto } from '$app/navigation'
     import { fov, mouseReactivity, backLight, pixelation } from '../stores'
 
 </script>
