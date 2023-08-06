@@ -39,7 +39,7 @@
 				</div>
 				<div class="two">
 					<div class="drac-box drac-rounded-lg drac-p-md info">
-						<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-purple-cyan">:~$ ./skills.sh</h2>
+						<h2 style="font-weight: 500;" class="drac-heading drac-heading-xl drac-text-purple-cyan">~$ ./skills.sh</h2>
 						<br>
 						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Javascript/Typescript... Advanced</p>
 						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Python... Advanced</p>
