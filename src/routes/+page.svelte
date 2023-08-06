@@ -54,12 +54,14 @@
 			<div style="height: 2em;"></div>
 		</div>
 		<div class="btns">
-			<a href="/three" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</a>
-			<a href="/projects" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</a>
-			<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</a>
-			<a href="https://github.com/mikimou/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">GitHub</a>
-			<a href="/settings" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Settings</a>
-			<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</a>
+			
+				<a href="/three" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</a>
+				<a href="/projects" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</a>
+				<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</a>
+				<a href="https://github.com/mikimou/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">GitHub</a>
+				<a href="/settings" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Settings</a>
+				<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</a>
+			
 		</div>
 	</div>
 </section>
@@ -146,6 +148,7 @@
 			display: block;
         }
 		.btns {
+			display: block;
 		}
 		.two {
 			display: inline-block;
@@ -173,27 +176,31 @@
     }
 	@media only screen and (max-width: 820px) {
         .window {
-            width: 28em;
+            width: 26em;
 		}
 		.info {
-			width: 25em;
+			width: auto;
 		}
 		.btns {
-			width: 30em;
-			display: block;
-			text-align: center;
+			width: 28em;
+			display: grid;
+			grid-template-columns: 9em 9em 9em;
+			justify-content: center;
 		}
+		
 		.profile {
 			margin-bottom: 2em;
 			margin-top: 0em;
 			margin-left: 0em;
 			margin-right: 0em;
+			width: auto;
 		}
 		.desc {
 			margin-bottom: 2em;
 			margin-top: 0em;
 			margin-left: 0em;
 			margin-right: 0em;
+			width: auto;
 		}
     }
 	.buttons {
