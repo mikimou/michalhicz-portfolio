@@ -103,7 +103,7 @@
         display:inline;
         transition: 200ms ease-in-out;
         position: relative;
-        margin-bottom: 3em;
+        margin-bottom: 0em;
     }
     .card2 {
         width: auto;
@@ -117,7 +117,7 @@
         display:inline;
         transition: 200ms ease-in-out;
         float: right;
-        margin-bottom: 3em;
+        margin-bottom: 0em;
     }
     .body {
         display: flex;
@@ -159,7 +159,13 @@
             margin-top: 3em;
             margin-bottom: 0em;
             justify-content: center;
-    }
+        }
+        .card {
+            margin-bottom: 3em;
+        }
+        .card2 {
+            margin-bottom: 3em;
+        }
 
     }
     @media only screen and (max-width: 1000px) {
@@ -169,6 +175,8 @@
         .desc {
             text-align: center;
         }
+        
+
 
     }
 	.window:hover {
