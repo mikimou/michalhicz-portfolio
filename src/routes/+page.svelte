@@ -3,11 +3,11 @@
 
 	async function keypresss(event) {
 		if (event.key == 'y') {
-			goto('/three');
+			goto('/mystory');
 		}
 		if (event.key == 'Y') {
 
-			goto('/three');
+			goto('/mystory');
 		}
 	}
 	
@@ -34,7 +34,7 @@
 						</center>
 					</div>
 					<div class="drac-box drac-rounded-lg drac-p-md desc">
-						<p style="margin: 0em;" class="drac-text drac-line-height drac-text-lg drac-text-purple-cyan">Passionate software developer, networking specialist, </p>
+						<p style="margin: 0em;" class="drac-text drac-line-height drac-text-lg drac-text-purple-cyan">Passionate software developer, network specialist and automation freak.</p>
 					</div>
 				</div>
 				<div class="two">
@@ -45,9 +45,9 @@
 						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Python... Advanced</p>
 						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Databases... Fundamentals</p>
 						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">API (REST/GraphQL)... Advanced</p>
-						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Breaking stuff... Advanced</p>
+						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Golang... Fundamentals</p>
 						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Fixing stuff... Expert</p>
-						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm">Show More? [<a href="/three">YES</a>/No] (Click on <a href="/three">YES</a> or type 'y')</p>
+						<p class="drac-text drac-line-height drac-text-purple-cyan drac-text-sm"><i>Show More? [<a href="/mystory">YES</a>/no] (Click on <a href="/mystory">YES</a> or type 'y')</i></p>
 					</div>
 				</div>
 			</div>
@@ -55,10 +55,10 @@
 		</div>
 		<div class="btns">
 			
-				<a href="/three" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</a>
+				<a href="/mystory" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">My story</a>
 				<a href="/projects" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Projects</a>
-				<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</a>
 				<a href="https://github.com/mikimou/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">GitHub</a>
+				<a href="https://portal.michalhicz.eu/" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Portal</a>
 				<a href="/settings" class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Settings</a>
 				<a class="drac-btn drac-bg-purple-cyan drac-m-sm btn aa">Contact</a>
 			
@@ -118,7 +118,7 @@
 	.profile {
 		width: 25em;
 		height: 8em;
-		margin-top: 4em;
+		margin-top: 2em;
 		margin-bottom: 2em;
 		margin-left: 0em;
 		margin-right: 2em;
@@ -142,7 +142,7 @@
 	.window:hover {
 		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;
 	}
-	@media only screen and (max-width: 1200px) {
+	@media only screen and (max-width: 1150px) {
         .window {
             width: 40em;
 			display: block;
@@ -174,7 +174,7 @@
 			margin-bottom: 6em;
 		}
     }
-	@media only screen and (max-width: 820px) {
+	@media only screen and (max-width: 1150px) {
         .window {
             width: 26em;
 		}

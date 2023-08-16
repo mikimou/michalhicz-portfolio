@@ -3,6 +3,8 @@
     export let head = "";
     export let desc = "";
     export let button = "";
+    export let secb = "";
+    export let seclink= "";
 
 </script> 
 
@@ -11,6 +13,9 @@
     <div style="height: 1em;"></div>
     <p style="font-weight: 500;" class="drac-text drac-text-black drac-text-md">{desc}</p>
     <a href="{href}" style="margin: 0;position:absolute; bottom:2em; color: #8BD2F2;" class="drac-btn drac-bg-black drac-text-grey-secondary drac-m-sm drac-btn-md">{button}</a>
+    {#if secb != ""}
+    <a href="{seclink}" style="margin: 0;position:absolute; bottom:2em; color: #8BD2F2; right:2em;" class="drac-btn drac-bg-black drac-text-grey-secondary drac-m-sm drac-btn-md">{secb}</a>
+    {/if}
 </div>
 
 <style>
@@ -32,6 +37,7 @@
     }
     a { 
 		text-decoration: none!important;
+        
 		
 	}
 </style>

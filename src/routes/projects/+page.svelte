@@ -20,9 +20,9 @@
     <div class="body">
         <div class="window">
             <div class="content">
-                <ProjectCard href={""} head={"Michal Hicz Portfolio"} desc={"Portfolio website made with SvelteKit and Three.js."} button={'Explore Project'}/>
-                <ProjectCard href={""} head={"A.I. Lyrics Generator"} desc={"Website for generating lyrics based on typed topic made with SvelteKit and Webhooks."} button={'Explore Project'}/>
-                <ProjectCard href={""} head={"E-learning website"} desc={"E-Learning website with content primarily aimed for network education."} button={'Explore Project'}/>
+                <ProjectCard secb="Source code" seclink="https://github.com/Sietove-vzdelanie/" href={"https://sietovevzdelanie.eu/"} head={"E-learning website"} desc={"E-Learning website with content primarily aimed for network education."} button={'Website'}/>
+                <ProjectCard href={"https://github.com/mikimou/michalhicz-portfolio/"} head={"Michal Hicz Portfolio"} desc={"Portfolio website made with SvelteKit and 3D library Three.js."} button={'Explore on GitHub'}/>
+                <ProjectCard href={"https://lyrics.michalhicz.eu/"} head={"A.I. Lyrics Generator"} desc={"Website for generating lyrics based on typed topic made with SvelteKit, Webhooks and n8n backend."} button={'Website'}/>
             </div>
         </div>
     </div>
