@@ -56,13 +56,13 @@
                         <div style="height: 1em;"></div>
                         <p style="font-weight: 500;" class="drac-text drac-text-black drac-text-md">
                             While my programming journey encompassed a multitude of domains, I found myself most drawn to networking.
-                        The complexities of networking protocols, routing mechanisms, and the intricacies of data transmission captivated my attention.
+                        The complexities of networking protocols, routing mechanisms, and the intricacies of data transmission kept my attention.
                         I discovered how data flows across networks, learning to troubleshoot issues and optimize performance.</p>
                     </div>
                 </div>
                 <div class="drac-box drac-rounded-lg drac-p-md desc">
                     <p class="drac-text drac-text-purple-cyan">
-                        Starting with a curiosity-driven interest in programming during my youth, I have evolved into a skilled programmer with a deep understanding of servers,
+                        Starting with a curiosity-driven interest in programming during my youth, I have evolved into a experienced programmer with a deep understanding of servers,
                         Linux, Python, automation, and a specialization in networking.
                         Looking ahead, I am excited to continue expanding my horizons, exploring new technologies, and contributing to the ever-evolving landscape of software development. 
                     </p>
