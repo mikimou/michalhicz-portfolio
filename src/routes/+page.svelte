@@ -34,7 +34,7 @@
 						</center>
 					</div>
 					<div class="drac-box drac-rounded-lg drac-p-md desc">
-						<p style="margin: 0em;" class="drac-text drac-line-height drac-text-lg drac-text-purple-cyan">Passionate software developer, network specialist and automation freak.</p>
+						<p style="margin: 0em;" class="drac-text drac-line-height drac-text-lg drac-text-purple-cyan">Passionate software developer, network enthusiast and automation freak.</p>
 					</div>
 				</div>
 				<div class="two">

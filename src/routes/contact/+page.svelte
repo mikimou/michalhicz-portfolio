@@ -24,6 +24,8 @@
                 <p class="drac-text drac-text-purple-cyan drac-text-sm">michal07.h@gmail.com</p><br>
                 <p class="drac-text drac-text-purple-cyan drac-text-sm">Mobile number:</p>
                 <p class="drac-text drac-text-purple-cyan drac-text-sm">+421 910 405 579</p><br>
+                <p class="drac-text drac-text-purple-cyan drac-text-sm">Address:</p>
+                <p class="drac-text drac-text-purple-cyan drac-text-sm">Horné Saliby 92503, Slovakia</p><br>
             </center>
         </div>
     </div>
