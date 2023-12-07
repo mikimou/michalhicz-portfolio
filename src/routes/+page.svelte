@@ -35,7 +35,7 @@
 						</center>
 					</div>
 					<div class="drac-box drac-rounded-lg drac-p-md desc">
-						<a href="https://www.credly.com/badges/b58fba54-5496-4ece-9741-52a6140b83fd/public_url"><img style="float: left; margin-right:1em;"  width="80" src={badge}></a>
+						<a href="https://www.credly.com/users/michal-hicz"><img style="float: left; margin-right:1em;"  width="80" src={badge}></a>
 						<p style="margin: 0em; " class="drac-text drac-line-height drac-text-lg drac-text-purple-cyan">Software developer, network enthusiast and automation freak.</p>
 					</div>
 				</div>
