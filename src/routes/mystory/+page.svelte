@@ -1,5 +1,8 @@
 <script>
-    import ProjectCard from '../ProjectCard.svelte'
+    import ccna from '$lib/images/badge.png';
+    import en2 from '$lib/images/en2.png';
+    import py2 from '$lib/images/py2.png';
+
 
 </script>
 
@@ -67,12 +70,15 @@
                         Looking ahead, I am excited to continue expanding my horizons, exploring new technologies, and contributing to the ever-evolving landscape of software development. 
                     </p>
                 </div>
+                <center><a style="font-weight: 500; margin-top: 3em;" href="https://www.credly.com/users/michal-hicz" class="drac-btn drac-bg-purple-cyan drac-m-sm drac-text-black">Check out my certification!</a></center>
             </div>
         </div>
     </div>
 </div>
 
 <style>
+    .mobile-none {
+    }
     .desc {
         box-shadow: inset 0 0 25px 3px #16171d;
 		box-shadow: 0 0 30px 1px #16171d;
@@ -166,7 +172,9 @@
         .card2 {
             margin-bottom: 3em;
         }
-
+        img {
+            width: 110px;
+        }
     }
     @media only screen and (max-width: 1000px) {
         .content {
@@ -175,9 +183,9 @@
         .desc {
             text-align: center;
         }
-        
-
-
+        .mobile-none {
+            display: none;
+        }
     }
 	.window:hover {
 		box-shadow: inset 0 0 0px 0px #0F0F16, 0 0 20px 5px #0a0a0e;

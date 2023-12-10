@@ -69,6 +69,13 @@
 </section>
 
 <style>
+	.aa {
+		font-weight: 500;
+		box-shadow: 0 0 10px 1px black;
+		transition: 200ms ease-in-out;
+		padding-left: 1.4em;
+		padding-right: 1.4em;
+	}
 	.head {
 		
 	}
@@ -175,6 +182,10 @@
 			margin-top: 6em;
 			margin-bottom: 6em;
 		}
+		.aa {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
     }
 	@media only screen and (max-width: 1150px) {
         .window {
@@ -203,6 +214,10 @@
 			margin-left: 0em;
 			margin-right: 0em;
 			width: auto;
+		}
+		.aa {
+			padding-left: 1em;
+			padding-right: 1em;
 		}
     }
 	.buttons {
@@ -241,10 +256,5 @@
 	}
 	.aa:hover {
 		box-shadow: 0 0 0px 0px black;
-	}
-	.aa {
-		font-weight: 500;
-		box-shadow: 0 0 10px 1px black;
-		transition: 200ms ease-in-out;
 	}
 </style>
