@@ -50,7 +50,8 @@ wireplumber \
 xsettingsd \
 github-cli \
 noto-fonts \
-helvum
+helvum \
+polkit
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S wpgtk \
 visual-studio-code-bin \
